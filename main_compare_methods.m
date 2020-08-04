@@ -26,7 +26,7 @@ eps_DP_vec = 1; L_e = length(eps_DP_vec);
 alg_type_mtx = [[0 0];[1 0];[2 0];[3 0];[1 1];[2 1]]; L_a = size(alg_type_mtx, 1);
 % alg_type_mtx = [2 0]; L_a = size(alg_type_mtx, 1);
 alg_names = {'DP-GD', 'DP-NAG', 'DP-MASG', 'DP-HB', 'DP-NAG-opt', 'DP-MASG-opt'};
-c_vec = [0.1 0.5 1]; L_c = length(c_vec);
+c_vec = [0.1 1]; L_c = length(c_vec);
 N = 20;
 E0 = 10;
 alter_T = 1;
@@ -142,6 +142,11 @@ for i = 1:L_conf
     
     sgtitle(sprintf('$n =%d$, $m = %d$, $T = %d$', n, m_vec(i2), T_vec(i1)), ...
         'Interpreter', 'latex');
+    
+    filenametosave = [foldertosave sprintf('errors_n_%d_m_%d_T_%d_various_c',...
+        n, m_vec(i2), T_vec(i1))];
+    
+    print(gcf, filenametosave, '-depsc');
 end
 
 
