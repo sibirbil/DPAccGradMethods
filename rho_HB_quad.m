@@ -1,5 +1,7 @@
 function [rho] = rho_HB_quad(mu, L, alpha, beta)
 
+% [rho] = rho_HB_quad(mu, L, alpha, beta)
+% 
 % This function calculate thex rate of the heavy ball algorithm which uses
 % alpha as its stepsize and beta as its momentum parameter.
 % 
