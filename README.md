@@ -7,7 +7,9 @@ This is the code package for the paper
 Nurdan Kuru, Ilker Birbil, Mert Gurbuzbalaban, and Sinan Yildirim
  
 run "main_compare_methods.m" to replicate the results in Section 5.
+
 run "main_HB_quad.m" to replicate Figure 1 in Section 3.
+
 run "main_MSAG_distribute_noise.m" to replicate Figure 1 in Section 3.
 
 For questions/corrections, please email sinanyildirim@sabanciuniv.edu
